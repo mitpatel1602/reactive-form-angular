@@ -42,20 +42,22 @@ export class AppComponent implements OnInit {
          
       ]),
     })
-
+        // value change only for one control
     // this.reactiveForm.get('firstName')?.valueChanges.subscribe((value)=>{
 
     //     console.log(value);
     // })
 
+    // value change for all the formGroup
     // this.reactiveForm.valueChanges.subscribe((data) =>{
     //     console.log(data);
-        
     // })
+
+    // status change for all formGroup
     // this.reactiveForm.statusChanges.subscribe((status) =>{
     //   console.log(status);
-      
     // })
+    
     this.reactiveForm.statusChanges.subscribe((status) =>{
       // console.log(status);
       this.formStatus = status;
